@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.ktds.hskim.mymemoapp.vo.Memo;
@@ -60,6 +61,10 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getReadableDatabase();
     }
 
+    /**
+     * 리스트 가져오는 메소드
+     * @return
+     */
     public List<Memo> getAllMemoList() {
         StringBuffer sb = new StringBuffer();
         sb.append(" SELECT _ID, SUBJECT, CONTENT, DATE FROM MEMO_TABLE ");
@@ -81,12 +86,44 @@ public class DBHelper extends SQLiteOpenHelper {
             memo.setContent(cursor.getString(2));
             memo.setDate(cursor.getString(3));
 
+            //memo.setDate(cursor.getString(3).substring(0, 10));
+//            if ( checkTime(memo) != null ) {
+//                memo.setDate(checkTime(memo));
+//            }
+//            else {
+//                memo.setDate(cursor.getString(3));
+//            }
+
             memoList.add(memo);
         }
 
         return memoList;
     }
 
+    /**
+     * TODO 시간 체크 미 완성
+     * @param memo
+     * @return
+     */
+    public String checkTime(Memo memo) {
+        Log.d("MEMO", memo.get_id() + "");
+
+        StringBuffer sb = new StringBuffer();
+        sb.append(" SELECT datetime(DATE, 'YYYY-MM-DD') FROM MEMO_TABLE WHERE _ID = ? ");
+
+        // 일기 전용 DB 객체
+        SQLiteDatabase db = getReadableDatabase();
+
+        // SELECT 실행
+        Cursor cursor = db.rawQuery(sb.toString(), new String[]{memo.get_id() + ""});
+
+        return cursor.getString(0);
+    }
+
+    /**
+     * 메모 추가 메소드
+     * @param memo
+     */
     public void addToMemo(Memo memo) {
 
         // 사용 가능한 DB 객체 가져오기
@@ -112,6 +149,11 @@ public class DBHelper extends SQLiteOpenHelper {
         Toast.makeText(context, "메모 입력 완료", Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * 메모 상세 정보
+     * @param id
+     * @return
+     */
     public Memo getOneMemo (int id) {
 
         Memo memo = new Memo();
@@ -123,7 +165,7 @@ public class DBHelper extends SQLiteOpenHelper {
         sb.append(" SELECT _ID, SUBJECT, CONTENT, DATE FROM MEMO_TABLE WHERE _ID = ? ");
 
         // SELECT 실행
-        Cursor cursor = db.rawQuery(sb.toString(), new String[]{String.valueOf(id)});
+        Cursor cursor = db.rawQuery(sb.toString(), new String[]{ id + "" });
 
         if ( cursor.moveToNext() ) {
             memo.set_id(cursor.getInt(0));
@@ -134,6 +176,10 @@ public class DBHelper extends SQLiteOpenHelper {
         return memo;
     }
 
+    /**
+     * 메모 수정 메소드
+     * @param memo
+     */
     public void modifyToMemo (Memo memo) {
         // 사용 가능한 DB 객체 가져오기
         SQLiteDatabase db = getWritableDatabase();
@@ -158,6 +204,10 @@ public class DBHelper extends SQLiteOpenHelper {
         Toast.makeText(context, "메모 수정 완료", Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * 메모 삭제 메소드
+     * @param id
+     */
     public void deleteToMemo(int id) {
         // 사용 가능한 DB 객체 가져오기
         SQLiteDatabase db = getWritableDatabase();

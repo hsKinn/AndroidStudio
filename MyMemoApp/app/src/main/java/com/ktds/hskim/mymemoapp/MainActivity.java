@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
         // MemoList 가져오기
         List<Memo> memoList = dbHelper.getAllMemoList();
 
-        // MemoLIst 뿌려주기
+        // MemoLIst 출력
         lvMemoList.setAdapter(new MemoListAdapter(memoList, MainActivity.this));
 
-        // Floating 버튼
+        // Floating 버튼 Memo 추가
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
