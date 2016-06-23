@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="240px"
+            android:layout_height="280px"
+            android:src="@mipmap/lock"
+            android:id="@+id/imageLock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="손승락"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageLock"
+            android:id="@+id/tvLock" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마무리 투수\n우투우타\naka 락앤樂, 락앤Lock, 롯승락"
+            android:layout_below="@+id/tvLock"
+            android:layout_toRightOf="@+id/imageLock" />
+    </RelativeLayout>
+
+
+</FrameLayout>

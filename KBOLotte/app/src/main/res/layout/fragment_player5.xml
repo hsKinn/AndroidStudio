@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="240px"
+            android:layout_height="280px"
+            android:src="@mipmap/kang"
+            android:id="@+id/imageKang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강민호"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageKang"
+            android:id="@+id/tvKang" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포수\n우투우타\naka 강풍기 (삼진 왕)"
+            android:layout_below="@+id/tvKang"
+            android:layout_toRightOf="@+id/imageKang" />
+    </RelativeLayout>
+</FrameLayout>

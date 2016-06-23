@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="240px"
+            android:layout_height="280px"
+            android:src="@mipmap/woo"
+            android:id="@+id/imagewoo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조원우"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imagewoo"
+            android:id="@+id/tvWoo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014 ~ 2015년 SK 와이번스 주루/외야 수비 코치\n2015 SK 와이번스 작전/주루 코치\n2015 ~SK 와이번스 수석 코치\n2015.10.08 롯데자이언츠 감독 선임"
+            android:layout_below="@+id/tvWoo"
+            android:id="@+id/tvWoo2"
+            android:layout_toRightOf="@+id/imagewoo" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

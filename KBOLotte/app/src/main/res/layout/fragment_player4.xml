@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="240px"
+            android:layout_height="280px"
+            android:src="@mipmap/moon"
+            android:id="@+id/imageMoon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김문호"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageMoon"
+            android:id="@+id/tvMoon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좌익수\n좌투좌타\naka 갓문호"
+            android:layout_below="@+id/tvMoon"
+            android:layout_toRightOf="@+id/imageMoon" />
+    </RelativeLayout>
+
+
+</FrameLayout>

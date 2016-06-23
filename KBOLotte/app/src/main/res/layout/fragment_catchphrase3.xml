@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2014 거인의 근성을 깨워라, 2014 Champ\n롯데자이언츠(代表理事 崔河鎭)는 2014 시즌 캐치프레이즈를 거인의 근성을 깨워라, 2014 Champ!로 확정했다. 이번 캐치프레이즈는 목표를 위해 팀을 하나로 결집시키는 문구 선정에 최우선으로 고려하였으며, 그라운드에서 근성과 패기있는 플레이로 반드시 경기를 지배하겠다는 강한 의지를 담고 있다. 특히, 근성 이라는 단어는 롯데자이언츠를 상징할 수 있는 키워드로, 우승을 향해 선수, 팬, 프런트가 하나로 통일되자는 의미도 함축했다. 한편. 롯데자이언츠는 내년 1월 6일 시무식을 시작으로 2014 시즌 목표를 향한 힘찬 발걸음을 시작한다."/>
+
+</FrameLayout>

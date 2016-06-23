@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_players"
+            android:icon="@drawable/ic_face_white_24dp"
+            android:title="Players" />
+        <item
+            android:id="@+id/nav_catchphrase"
+            android:icon="@drawable/ic_announcement_white_24dp"
+            android:title="Catchphrase" />
+        <item
+            android:id="@+id/nav_market"
+            android:icon="@drawable/ic_shopping_basket_white_24dp"
+            android:title="Market" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

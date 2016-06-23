@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2013 열정과 투지의 롯데자이언츠!\n롯데자이언츠(代表理事 蔣炳守)는 2013시즌 캐치프레이즈로 열정과 투지의 롯데자이언츠!를 확정했다. 2013시즌 선수단의 도전을 상징하는 ‘열정’은, 팬들의 절대적 성원과 프런트의 헌신적 지원 하에 혼을 담은 열정을 그라운드에서 펼친다는 선수단의 기치를 담았으며, 투지 넘치는 플레이를 통해 포기하지 않는 끈질긴 야구를 의미하고 있다. 이번 캐치프레이즈는 모두가 공유할 수 있고, 쉽게 기억되는 문구 선정을 최우선으로 하였다."/>
+
+</FrameLayout>

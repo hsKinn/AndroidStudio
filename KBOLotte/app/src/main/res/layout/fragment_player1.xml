@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="240px"
+                android:layout_height="280px"
+                android:src="@mipmap/jo"
+                android:id="@+id/imageJo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조지훈"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/imageJo"
+                android:id="@+id/tvJo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2006~2016 롯데 자이언츠\n2008~2009 LIG 손해보험 그레이터스\n2006~2008 원주 동부 프로미\n2005~2006 서울 삼성 썬더스"
+                android:layout_below="@+id/tvJo"
+                android:layout_toRightOf="@+id/imageJo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="240px"
+                android:layout_height="280px"
+                android:src="@mipmap/park"
+                android:id="@+id/imagePark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="박기량"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/imagePark"
+                android:id="@+id/tvPark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2009~2016 롯데 자이언츠\n2013~2016 모비스 피버스\n2013~2016 KDB생명 위너스\n2013~2016 삼성화재 블루팡스"
+                android:layout_below="@+id/tvPark"
+                android:layout_toRightOf="@+id/imagePark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="240px"
+                android:layout_height="280px"
+                android:src="@mipmap/yum"
+                android:id="@+id/imageYum" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="염지원"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/imageYum"
+                android:id="@+id/tvYum" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2011~2015 한화 이글스\n2011~2014 KT 소닉붐\n2014~2016 현대캐피탈 스카이워커스"
+                android:layout_below="@+id/tvYum"
+                android:layout_toRightOf="@+id/imageYum" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="240px"
+                android:layout_height="280px"
+                android:src="@mipmap/yoon"
+                android:id="@+id/imageYoon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조윤경"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/imageYoon"
+                android:id="@+id/tvYoon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014 한화 이글스\n2015~2016 KT 소닉붐\n2014~2015 LG 세이커스\n2013~2014 KT 소닉붐"
+                android:layout_below="@+id/tvYoon"
+                android:layout_toRightOf="@+id/imageYoon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

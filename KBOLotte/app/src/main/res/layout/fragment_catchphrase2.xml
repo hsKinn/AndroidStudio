@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2015 Restart 2015, 다시 뛰는 거인의 심장 \n롯데자이언츠(代表理事 李暢遠)는 2015 시즌 캐치프레이즈를 Restart 2015,다시 뛰는 거인의 심장!으로 확정했다. 이번 캐치프레이즈는 선수단 모두가 그라운드에서 가슴 뛰는 플레이를 펼쳐 다시 한번 영광의 순간을 재현하고자하는 강한 의지를 담고 있다."/>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayerFragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="240px"
+            android:layout_height="280px"
+            android:src="@mipmap/ho"
+            android:id="@+id/imageHo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김상호"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageHo"
+            android:id="@+id/tvHo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1루수\n우투우타"
+            android:layout_below="@+id/tvHo"
+            android:layout_toRightOf="@+id/imageHo" />
+    </RelativeLayout>
+
+
+</FrameLayout>
